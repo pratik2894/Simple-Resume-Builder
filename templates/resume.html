@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> your resume</title>
+
+        </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/resume.css' %}"/>
+</head>
+<body>
+
+	<div class="main">
+		<div class="top-section">
+			<p class="p1">{{name}} <span>{{lastname}}</span></p>
+			<p class="p2">{{specialization}}</p>
+		</div>
+		<div class="clearfix"></div>
+
+		<div class="col-div-4">
+			<div class="content-box" style="padding-left: 40px;">
+
+				
+			<p class="head">Contact</p>
+			<p class="p3"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp;&nbsp;{{mobile}}</p>
+			<p class="p3"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;&nbsp;{{email}}</p>
+			<p class="p3"><i class="fa fa-home" aria-hidden="true"></i> &nbsp;&nbsp;{{city}}</p>
+			
+
+			<br/>
+			<p class="head">my skills</p>
+			<ul class="skills">
+				<li><span>{{skill1}}</span></li>
+				<li><span>{{skill2}}</span></li>
+				<li><span>{{skill3}}</span></li>
+				<li><span>{{skill4}}</span></li>
+				<li><span>{{skill5}}</span></li>
+				<li><span>{{skill6}}</span></li>
+
+			</ul>
+
+			<br/>
+			<p class="head">Certifications</p>
+				<p class="p3">{{certi1}}</p>
+				<p class="p3">{{certi2}}</p>
+				<p class="p3">{{certi3}}</p>
+				<p class="p3">{{certi4}}</p>
+				<p class="p3">{{certi5}}</p>
+
+				
+
+			<br/>
+			<p class="head">Languages</p>
+			<p class="p3">{{lang1}}</p>
+			<p class="p3">{{lang2}}</p>
+			<p class="p3">{{lang3}}</p>
+			</div>
+		</div>
+		<div class="line"></div>
+		<div class="col-div-8">
+			<div class="content-box">
+			<p class="head">profile</p>
+			<p class="p3" style="font-size: 14px;">{{self}}</p>
+			<br/>
+			<p class="head">EXPERIENCE</p>
+
+			<p>{{pc1}} ({{pc1y1}})</p>
+			<p class="p-4">
+			{{pc1y1r1}}</p>
+
+			<p>{{pc2}} ( {{pc2y2}} )</p>
+			<p class="p-4">
+			{{pc2y2r2}}
+			</p>
+
+			<p>{{pc3}} ({{pc3y3}})</p>
+			<p class="p-4">
+			{{pc3y3r3}}</p>
+
+
+			<br/>
+
+			<p class="head">Education</p>
+			<p class="p-4" >{{tenth}} ({{tenthyr}})</p>
+			<p class="p-4" >{{twelc}} ({{twelcyr}})</p>
+			<p class="p-4" >{{university}} {{unipassyr}}</p>
+
+
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+	</div>
+		<br/>
+
+
+
+
+
+</body>
+</html>

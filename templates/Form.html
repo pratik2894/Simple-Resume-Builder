@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <!----======== CSS ======== -->
+    {% load static %}
+    <link rel = "stylesheet" href = "{% static 'css/contact.css' %}" />
+
+     
+
+    <title>Responsive Regisration Form </title> 
+</head>
+<body>
+    <div class="container">
+        <header>Resume Form</header>
+
+        <form action="/resume/" method="post" >
+            {% csrf_token %}
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>First Name</label>
+                            <input type="text" name="fname" placeholder="Enter your name" required >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Last Name</label>
+                            <input type="text" name="lname" placeholder="Enter your last name" required >
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input name="bod" type="date" placeholder="Enter birth date" required>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input name="mobile" type="number" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Enter your specialization</label>
+                            <input name="specialization" type="text" placeholder="Enter your specialization" required>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Skills and Certification</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Curently living city</label>
+                            <input name="city" type="text" placeholder="Curently living city"required >
+                        </div>
+                        <div class="input-field">
+                            <label>skill 1</label>
+                            <input name="skill1" type="text" placeholder="Enter your Skill 1"required >
+                        </div>
+
+                        <div class="input-field">
+                            <label>skill 2</label>
+                            <input name="skill2" type="text" placeholder="Enter your Skill 2" required>
+                        </div>
+                        <div class="input-field">
+                            <label>skill 3</label>
+                            <input name="skill3" type="text" placeholder="Enter your Skill 3"required >
+                        </div>
+                        <div class="input-field">
+                            <label>skill 4</label>
+                            <input name="skill4" type="text" placeholder="Enter your Skill 4" required>
+                        </div>
+                        <div class="input-field">
+                            <label>skill 5</label>
+                            <input name="skill5" type="text" placeholder="Enter your Skill 5" required>
+                        </div>
+                        <div class="input-field">
+                            <label>skill 6</label>
+                            <input name="skill6" type="text" placeholder="Enter your Skill 6" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Enter online Certification 1</label>
+                            <input name="certi1" type="text" placeholder="Enter online Certification 1"required >
+                        </div>
+                        <div class="input-field">
+                            <label>Enter online Certification 2</label>
+                            <input name="certi2" type="text" placeholder="Enter online Certification 2" required >
+                        </div>
+                        <div class="input-field">
+                            <label>Enter online Certification 3</label>
+                            <input name="certi3"  type="text" placeholder="Enter online Certification 3"  required>
+                        </div>
+                        <div class="input-field">
+                            <label>Enter online Certification 4</label>
+                            <input name="certi4" type="text" placeholder="Enter online Certification 4" required >
+                        </div>
+                        <div class="input-field">
+                            <label>Enter online Certification 5</label>
+                            <input name="certi5" type="text" placeholder="Enter online Certification 5"  required>
+                        </div>
+                        <div class="input-field">
+                            <label>speaking langauge 1</label>
+                            <input name="lang1" type="text" placeholder="Enter speaking langauge 1"  required>
+                        </div>
+                        <div class="input-field">
+                            <label>speaking langauge 2</label>
+                            <input name="lang2" type="text" placeholder="Enter speaking langauge 2" required >
+                        </div>
+                        <div class="input-field">
+                            <label>speaking langauge 3</label>
+                            <input name="lang3" type="text" placeholder="Enter speaking langauge 3"  required>
+                        </div>
+                        <div class="input-field">
+                            <label>Enter About Yourself</label>
+                            <textarea name="self" id="w3review" name="w3review" rows="4" cols="50" required ></textarea>
+                        </div>
+                        <div class="input-field">
+                            <label>past company 1</label>
+                            <input name="pc1" type="text" placeholder="Enter past company name  "  required>
+                        </div>
+                        <div class="input-field">
+                            <label>working years in company 1</label>
+                            <input name="pc1y1" type="text" placeholder="mention start year and end year " required >
+                        </div>
+                        <div class="input-field">
+                            <label>Explain role in company 1</label>
+                            <textarea name="pc1y1r1" id="w3review" name="w3review" rows="4" cols="50"  required></textarea>
+                        </div>
+                        <div class="input-field">
+                            <label>past company 2</label>
+                            <input name="pc2" type="text" placeholder="Enter past company name 1  "  required>
+                        </div>
+                        <div class="input-field">
+                            <label>working years in past company 2</label>
+                            <input name="pc2y2" type="text" placeholder="mention start year and end year "  required>
+                        </div>
+                        <div class="input-field">
+                            <label>Explain role in past company 2</label>
+                            <textarea name="pc2y2r2" id="w3review" name="w3review" rows="4" cols="50" required></textarea>
+                        </div>
+                        <div class="input-field">
+                            <label>past company 3</label>
+                            <input name="pc3" type="text" placeholder="Enter past company name 2 " required >
+                        </div>
+                        <div class="input-field">
+                            <label>working years  in past company 3</label>
+                            <input name="pc3y3" type="text" placeholder="mention start year and end year "  required>
+                        </div>
+                        <div class="input-field">
+                            <label>Explain role in company 3</label>
+                            <textarea name="pc3y3r3" id="w3review" name="w3review" rows="4" cols="50" required></textarea>
+                        </div>
+
+                        <div class="input-field">
+                            <label>your 10th school name</label>
+                            <input name="tenth" type="text" placeholder="your 10th school name  " required >
+                        </div>
+                        <div class="input-field">
+                            <label>year of passing </label>
+                            <input name="tenthyr"  type="text" placeholder="passing year"  required >
+                        </div>
+                        <div class="input-field">
+                            <label>12th college name</label>
+                            <input name="twelc"  type="text" placeholder="your 12th college name" required >
+                        </div>
+                        <div class="input-field">
+                            <label>passing years</label>
+                            <input name="twelcyr" type="text" placeholder=" 12th passing year "  required>
+                        </div>
+                        <div class="input-field">
+                            <label>university name</label>
+                            <input name="university" type="text" placeholder=" enter your University name  " required >
+                        </div>
+                        <div class="input-field">
+                            <label>passing year</label>
+                            <input name="unipassyr" type="text" placeholder="year of Completion" required >
+                        </div>
+
+
+                    </div>
+
+                    <button type="submit" >
+                        <span class="btnText">submit</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+
+        </form>
+    </div>
+
+</body>
+</html>
